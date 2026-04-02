@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run RiskManagement-1",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "killBehavior": "polite",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "node",
+      "cwd": "${workspaceFolder}/RiskManagement",
+      "preLaunchTask": "PreLaunchTask for Run RiskManagement-1",
+      "envFile": "${workspaceFolder}/RiskManagement/env/.env2",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/RiskManagement\\\",\\\"profileName\\\":\\\"\\\"}\"}",
+        "runConfigurations": "{\"odataBinding\":{\"API_BUSINESS_PARTNER\":{\"destination\":\"The service is not bound to a destination\",\"type\":\"Destination\",\"path\":\"\"}}}"
+      }
+    },
+    {
+      "name": "Run RiskManagement-Live Data",
+      "runtimeExecutable": "cds",
+      "request": "launch",
+      "killBehavior": "polite",
+      "args": [
+        "watch",
+        "--open"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/RiskManagement",
+      "preLaunchTask": "PreLaunchTask for Run RiskManagement-Live Data",
+      "envFile": "${workspaceFolder}/RiskManagement/env/.env3",
+      "env": {
+        "run.config": "{\"handlerId\":\"lcap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/RiskManagement\\\",\\\"profileName\\\":\\\"\\\"}\"}",
+        "runConfigurations": "{}"
+      }
+    }
+  ]
+}
